@@ -18,7 +18,7 @@ Vagrant.configure(2) do |config|
 				domain.memory = node[:mem]
 				domain.cpus = node[:cpus]
 			end
-			#vmachine.vm.provision :shell, path: node[:prov_script]
+			vmachine.vm.provision :shell, path: node[:prov_script] # 3lech hidden ?
 		end
 	end
 end
